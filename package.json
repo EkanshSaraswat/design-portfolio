@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-resend-integrated",
+  "version": "1.0.0",
+  "description": "Multi-page creative portfolio with Resend email integration",
+  "scripts": {
+    "start": "concurrently -n \"frontend,backend\" -c \"cyan,magenta\" \"npm run frontend\" \"npm run backend\"",
+    "dev": "concurrently -n \"frontend,backend\" -c \"cyan,magenta\" \"npm run frontend\" \"npm run backend\"",
+    "frontend": "serve -l 3000 .",
+    "backend": "node backend/server.js",
+    "postinstall": "node -e \"const fs=require('fs'),path=require('path');const v='assets/vendor';fs.mkdirSync(v,{recursive:true});for(const f of ['gsap.min.js','ScrollTrigger.min.js'])fs.copyFileSync(path.join('node_modules','gsap','dist',f),path.join(v,f));console.log('vendored',f);\"",
+    "install:all": "npm install && cd backend && npm install"
+  },
+  "keywords": [
+    "portfolio",
+    "resend",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "serve": "^14.2.4"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "resend": "^6.39.0"
+  }
+}

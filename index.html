@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ekansh Saraswat, full-stack developer and B.Tech Computer Science student." />
+    <title>Ekansh Saraswat | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Courier+Prime:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Preload critical above-the-fold hero layers -->
+    <link rel="preload" as="image" type="image/webp" href="assets/shared/sky.webp" />
+    <link rel="preload" as="image" type="image/webp" href="assets/shared/distant.webp" />
+    <link rel="preload" as="image" type="image/webp" href="assets/shared/dominant.webp" />
+    <link rel="preload" as="image" type="image/webp" href="assets/shared/closest.webp" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+    <div class="page-wipe hide" aria-hidden="true"><div class="wipe-inner">OPENING<span class="dots">...</span></div></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="cursor-label" aria-hidden="true">OPEN</div>
+
+    <header class="site-header home-header">
+        <a class="brand magnetic" href="index.html" data-cursor="HOME">EKANSH<span>.</span></a>
+        <nav class="desktop-nav home-nav" aria-label="Main navigation">
+            <a class="nav-link magnetic" href="index.html" data-cursor="HOME" aria-current="page">Home</a>
+            <a class="nav-link magnetic" href="#work" data-cursor="WORK">Work</a>
+            <a class="nav-link magnetic" href="about.html" data-cursor="ABOUT">About</a>
+            <button class="nav-link nav-link--btn magnetic" type="button" data-open-contact data-cursor="WRITE">Contact</button>
+        </nav>
+        <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="mobile-menu">MENU</button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+        <div class="mobile-menu-inner">
+            <p class="eyebrow">NAVIGATION</p>
+            <a href="index.html" class="mobile-link" aria-current="page">HOME <span>01</span></a>
+            <a href="#work" class="mobile-link">WORK <span>02</span></a>
+            <a href="about.html" class="mobile-link">ABOUT <span>03</span></a>
+            <button type="button" class="mobile-link mobile-link--btn" data-open-contact>CONTACT <span>04</span></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- ── SECTION 1: LAYERED MOUNTAIN HERO ───────────────── -->
+        <section class="home-hero-pin" id="homeHeroPin" aria-label="Introduction">
+            <div class="home-hero" id="homeHero">
+                <div class="hero-stage" id="heroStage" aria-hidden="true">
+                    <img class="hero-layer hero-layer--sky" id="heroSky" src="assets/shared/sky.webp" alt="" width="1024" height="572" decoding="async" fetchpriority="high" />
+                    <img class="hero-layer hero-layer--distant" id="heroDistant" src="assets/shared/distant.webp" alt="" width="1024" height="572" decoding="async" />
+                    <img class="hero-layer hero-layer--mist-far" id="heroMistFar" src="assets/shared/mist.webp" alt="" width="1600" height="600" decoding="async" />
+                    <img class="hero-layer hero-layer--dominant" id="heroDominant" src="assets/shared/dominant.webp" alt="" width="1024" height="572" decoding="async" fetchpriority="high" />
+                    <img class="hero-layer hero-layer--closest" id="heroClosest" src="assets/shared/closest.webp" alt="" width="1024" height="572" decoding="async" fetchpriority="high" />
+                    <img class="hero-layer hero-layer--mist-near" id="heroMistNear" src="assets/shared/mist.webp" alt="" width="1600" height="600" decoding="async" />
+                    <div class="hero-scrim"></div>
+                    <div class="hero-ivory-lip"></div>
+                </div>
+
+                <div class="hero-copy-wrap">
+                    <div class="hero-copy hero-copy--primary" id="heroCopyPrimary">
+                        <h1 class="hero-display" id="heroHeadline1">
+                            <span class="hw">Hi!</span>
+                            <span class="hw">I'm</span>
+                            <span class="hw">Ekansh</span>
+                            <span class="hw">Saraswat,</span>
+                        </h1>
+                        <p class="hero-subline" id="heroSubline1">a full-stack developer and B.Tech Computer Science student.</p>
+                    </div>
+
+                    <div class="hero-copy hero-copy--secondary" id="heroCopySecondary" aria-hidden="true">
+                        <p class="hero-display hero-display--second" id="heroHeadline2">I build full-stack products for the web, with an eye for how they feel.</p>
+                    </div>
+                </div>
+
+                <a class="hero-scroll-cue" href="#work" aria-label="Scroll to Selected Projects" data-cursor="WORK">
+                    <svg width="18" height="26" viewBox="0 0 18 26" fill="none" aria-hidden="true">
+                        <path d="M9 1v22M2 16l7 7 7-7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ── SECTION 2: SELECTED PROJECTS ───────────────────── -->
+        <section class="work-section" id="work" aria-labelledby="workHeading">
+            <canvas class="work-particles" id="workParticles" aria-hidden="true"></canvas>
+
+            <div class="work-inner">
+                <header class="work-header">
+                    <span class="mono-label">01 / WORK</span>
+                    <h2 class="work-heading" id="workHeading">Selected Projects</h2>
+                </header>
+
+                <div class="project-stack">
+                    <button class="project-card project-card--wide" type="button" data-project="sampada" data-cursor="VIEW" aria-haspopup="dialog">
+                        <div class="project-media project-media--empty">
+                            <img class="project-image" src="assets/shared/sampada.png" alt="SampadaSuraksha disaster relief coordination platform" loading="lazy" />
+                            <span class="project-placeholder-label"></span>
+                        </div>
+                        <div class="project-meta">
+                            <h3 class="project-title">SampadaSuraksha</h3>
+                            <ul class="project-tags" aria-label="Technologies"></ul>
+                        </div>
+                    </button>
+
+                    <button class="project-card project-card--inset-right" type="button" data-project="escrow" data-cursor="VIEW" aria-haspopup="dialog">
+                        <div class="project-media project-media--empty">
+                            <img class="project-image" src="assets/shared/escrow.png" alt="Adaptive Escrow System risk and escrow timeline interface" loading="lazy" />
+                            <span class="project-placeholder-label"></span>
+                        </div>
+                        <div class="project-meta">
+                            <h3 class="project-title">Adaptive Escrow System</h3>
+                            <ul class="project-tags" aria-label="Technologies"></ul>
+                        </div>
+                    </button>
+
+                    <button class="project-card project-card--inset-left" type="button" data-project="blocklance" data-cursor="VIEW" aria-haspopup="dialog">
+                        <div class="project-media project-media--empty">
+                            <img class="project-image" src="assets/shared/blocklance.png" alt="BlockLance live Web3 reputation profiles" loading="lazy" />
+                            <span class="project-placeholder-label"></span>
+                        </div>
+                        <div class="project-meta">
+                            <h3 class="project-title">BlockLance</h3>
+                            <ul class="project-tags" aria-label="Technologies"></ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SECTION 3: SHORT PATH ──────────────────────────── -->
+        <section class="path-section" aria-label="Background">
+            <div class="path-inner">
+                <p class="path-copy">I'm a B.Tech Computer Science student at JK Lakshmipat University, Jaipur (expected 2027), working primarily with the MERN stack. Across internships at Realmonk Realty Pvt. Ltd. and Globe Asia Transport Pvt. Ltd., I've learned to care as much about how a product feels in someone's hands as how it's wired underneath.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────────────── -->
+    <footer class="home-footer">
+        <div class="home-footer-inner">
+            <div class="home-footer-left">
+                <span class="home-footer-name">Ekansh Saraswat</span>
+                <a class="home-footer-about" href="about.html" data-cursor="ABOUT">About →</a>
+            </div>
+            <div class="home-footer-social" aria-label="Social links">
+                <a class="social-icon" href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-cursor="LINKEDIN">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a class="social-icon" href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-cursor="GITHUB">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a class="social-icon" href="mailto:ekanshsaraswat1234@gmail.com" aria-label="Email" data-cursor="EMAIL">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ── PROJECT DETAIL MODAL ── -->
+    <dialog class="project-modal" id="projectModal" aria-labelledby="projectModalTitle">
+        <div class="project-modal-inner">
+            <button type="button" class="project-modal-close" data-close-project aria-label="Close project details">×</button>
+            <div class="project-modal-grid">
+                <div class="project-modal-side">
+                    <span class="project-modal-index" id="projectModalIndex">01</span>
+                    <p class="project-modal-role" id="projectModalRole"></p>
+                    <h2 class="project-modal-title" id="projectModalTitle"></h2>
+                    <div class="project-modal-links" id="projectModalLinks"></div>
+                </div>
+                <div class="project-modal-copy" id="projectModalCopy"></div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- ── CONTACT MODAL ── -->
+    <dialog class="contact-modal" id="contactModal" aria-labelledby="contactModalHeading">
+        <div class="contact-modal-inner">
+            <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact dialog">×</button>
+            <div class="contact-grid">
+                <div>
+                    <span class="postage" aria-hidden="true"><span>JPR · 2026</span></span>
+                    <h2 class="final-heading" id="contactModalHeading">Leave a <em>note.</em></h2>
+                    <p class="final-sub">The fastest way to reach me is email. Or leave a message here, and it arrives in my inbox through the same contact service.</p>
+                    <p class="eyebrow modal-eyebrow">ADDRESS BOOK</p>
+                    <div class="contact-list">
+                        <button class="magnetic" id="copyMail" type="button" data-email="ekanshsaraswat1234@gmail.com" data-cursor="COPY">
+                            <span>EMAIL / CLICK TO COPY</span>
+                            <strong>ekanshsaraswat1234@gmail.com</strong>
+                            <span id="copyState">↗</span>
+                        </button>
+                        <a class="magnetic" href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                            <span>LINKEDIN</span><strong>in/ekansh-saraswat</strong><span>↗</span>
+                        </a>
+                        <a class="magnetic" href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                            <span>GITHUB</span><strong>@EkanshSaraswat</strong><span>↗</span>
+                        </a>
+                    </div>
+                    <p class="signoff">thanks for reading,<br>Ekansh ✳</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <p class="eyebrow modal-eyebrow">WRITE / SEND A MESSAGE / 01</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">YOUR NAME</label>
+                            <input type="text" id="contactName" name="name" placeholder="Enter your name" autocomplete="name" maxlength="80" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">YOUR EMAIL</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">YOUR MESSAGE</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." maxlength="5000" required></textarea>
+                        </div>
+                        <button type="submit" class="action-button" id="submitContact">SEND MESSAGE <span>↗</span></button>
+                        <p id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="site.js"></script>
+</body>
+</html>
