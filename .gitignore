@@ -13,8 +13,7 @@ backend/.env
 .DS_Store
 Thumbs.db
 
-# Vendored animation libraries (regenerated from node_modules)
-assets/vendor/
+# Vendored animation libraries are committed so production never depends on postinstall.
 
 # Logs
 *.log

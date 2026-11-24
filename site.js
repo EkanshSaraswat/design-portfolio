@@ -78,6 +78,8 @@
         setupOptionalImages();
         setupCopyEmail();
         setupFaq();
+        // Without GSAP the CSS still hides `.reveal` elements, so show them here.
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in-view'));
     }
 
     Promise.all([loadScript(GSAP_SRC), loadScript(ST_SRC)]).then(() => {
@@ -100,25 +102,35 @@
 
         let mouse = { x: innerWidth / 2, y: innerHeight / 2 };
         let ringPos = { ...mouse };
+        const animated = gsapReady && typeof gsap !== 'undefined';
 
-        window.addEventListener('mousemove', (e) => {
-            mouse.x = e.clientX;
-            mouse.y = e.clientY;
+        function positionCursor() {
             dot.style.left = mouse.x + 'px';
             dot.style.top = mouse.y + 'px';
-            dot.style.opacity = '1';
-        });
-
-        gsap.ticker.add(() => {
-            ringPos.x += (mouse.x - ringPos.x) * 0.14;
-            ringPos.y += (mouse.y - ringPos.y) * 0.14;
             ring.style.left = ringPos.x + 'px';
             ring.style.top = ringPos.y + 'px';
             label.style.left = (ringPos.x + 20) + 'px';
             label.style.top = (ringPos.y + 18) + 'px';
+            dot.style.opacity = '1';
             ring.style.opacity = '1';
             label.style.opacity = '1';
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+            if (animated) return;
+            ringPos = { ...mouse };
+            positionCursor();
         });
+
+        if (animated) {
+            gsap.ticker.add(() => {
+                ringPos.x += (mouse.x - ringPos.x) * 0.14;
+                ringPos.y += (mouse.y - ringPos.y) * 0.14;
+                positionCursor();
+            });
+        }
 
         document.querySelectorAll('[data-cursor]').forEach((el) => {
             el.addEventListener('mouseenter', () => {

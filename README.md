@@ -29,8 +29,8 @@ site.js                    shared interactions (intro, cursor, books, tabs, para
 assets/about/              About-page mountain layers and scroll video
 assets/about/photos/       drop-in photo slots for the empty About frames
 assets/shared/             hero layers, ridge SVGs and project artwork
-assets/vendor/             vendored GSAP + ScrollTrigger (not committed — run
-                           `npm install` to regenerate from node_modules)
+assets/vendor/             vendored GSAP + ScrollTrigger (committed so production
+                           never depends on `npm install` to regenerate them)
 lib/contact.js             shared validation, CORS + rate limiting for the API
 api/contact.js             Vercel serverless contact endpoint
 backend/server.js          local Express contact endpoint (same behaviour)
@@ -40,7 +40,7 @@ vercel.json                security headers, font allowlist + API cache policy
 
 ## Run locally
 
-Requires Node 18+.
+Requires Node 26+.
 
 ```bash
 npm run install:all          # installs root + backend dependencies
@@ -77,8 +77,8 @@ npm run backend    # Express API only
 ## Deploy to Vercel
 
 1. Import the repository in Vercel (framework preset: **Other**).
-2. Leave Build Command and Output Directory empty. `npm install` runs `postinstall`,
-   which vendors GSAP and ScrollTrigger into `assets/vendor/`.
+2. Leave Build Command and Output Directory empty. GSAP and ScrollTrigger are already
+   committed in `assets/vendor/`; `postinstall` simply refreshes them from `node_modules`.
 3. Add the environment variables above under **Settings → Environment Variables** for
    Production, Preview and Development. At minimum set `RESEND_API_KEY`.
 4. Verify a sending domain in Resend and set `CONTACT_FROM_EMAIL` to an address on it.
@@ -112,8 +112,8 @@ Notes:
 - **Motion:** name decryption, page wipes, magnetic cursor, book lift/page turn,
   scroll-rise mountains with GSAP/ScrollTrigger parallax, Polaroid hovers and
   closing sign-off. All motion respects `prefers-reduced-motion` and heavy pointer
-  effects are disabled below 760px. GSAP + ScrollTrigger are vendored under
-  `assets/vendor/`; the site degrades gracefully to static HTML if they fail to load.
+  effects are disabled below 760px. GSAP + ScrollTrigger are committed under
+  `assets/vendor/`; the site also degrades gracefully to static HTML if they fail to load.
 
 ## Interactions
 
