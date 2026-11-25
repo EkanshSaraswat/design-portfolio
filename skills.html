@@ -1,118 +1,436 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ekansh Saraswat — core skills and stack." />
+    <meta name="description" content="Skills & Toolkit: languages, frameworks, and tools Ekansh Saraswat builds with." />
     <title>Skills | Ekansh Saraswat</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon" href="favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Courier+Prime:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body>
-    <div class="page-wipe" aria-hidden="true"><span>LOADING<span class="dots">...</span></span></div>
+<body data-page="skills">
+    <div class="page-wipe hide" aria-hidden="true"><div class="wipe-inner">OPENING<span class="dots">...</span></div></div>
     <div class="cursor-dot" aria-hidden="true"></div>
     <div class="cursor-ring" aria-hidden="true"></div>
-    <div class="cursor-label" aria-hidden="true">OPEN</div>
-    <div class="progress-rail" aria-hidden="true">
-        <div class="progress-line"><span></span></div>
-        <div class="progress-mark">00</div>
-    </div>
-    <div class="next-note" aria-hidden="true"></div>
-    <header class="site-header"><a class="brand magnetic" href="index.html"
-            data-cursor="HOME">EKANSH<span>.DEV</span></a>
-        <nav class="desktop-nav" aria-label="Main navigation"><a class="nav-link magnetic" href="service.html"
-                data-cursor="WORK">WORK</a>
-            <a class="nav-link magnetic" href="experience.html" data-cursor="EXP">EXPERIENCE</a>
-            <a class="nav-link magnetic" href="skills.html" data-cursor="SKILLS">SKILLS</a>
-            <a class="nav-link magnetic" href="contact.html" data-cursor="CONTACT">CONTACT</a>
+    <div class="cursor-label" aria-hidden="true">TOOLS</div>
+    <nav class="progress-rail" aria-label="Page sections">
+        <div class="progress-line" aria-hidden="true"><span></span></div>
+        <div class="progress-mark" aria-hidden="true">00</div>
+    </nav>
+
+    <header class="site-header">
+        <a class="brand magnetic" href="index.html" data-cursor="HOME">EKANSH<span>.</span></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a class="nav-link magnetic" href="index.html" data-cursor="HOME">Home</a>
+            <a class="nav-link magnetic" href="index.html#work" data-cursor="WORK">Work</a>
+            <a class="nav-link magnetic" href="about.html" data-cursor="ABOUT">About</a>
+            <button class="nav-link nav-link--btn magnetic" type="button" data-open-contact data-cursor="WRITE">Contact</button>
         </nav>
-        <button class="menu-toggle magnetic" type="button" aria-expanded="false"
-            aria-controls="mobile-menu">MENU</button>
+        <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="mobile-menu">MENU</button>
     </header>
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
         <div class="mobile-menu-inner">
-            <div class="eyebrow">NAVIGATION</div>
-            <a href="service.html" class="mobile-link">WORK <span>↗</span></a>
-            <a href="experience.html" class="mobile-link">EXPERIENCE <span>↗</span></a>
-            <a href="skills.html" class="mobile-link">SKILLS <span>↗</span></a>
-            <a href="contact.html" class="mobile-link">CONTACT <span>↗</span></a>
+            <p class="eyebrow">NAVIGATION</p>
+            <a href="index.html" class="mobile-link">HOME <span>01</span></a>
+            <a href="index.html#work" class="mobile-link">WORK <span>02</span></a>
+            <a href="about.html" class="mobile-link">ABOUT <span>03</span></a>
+            <button type="button" class="mobile-link mobile-link--btn" data-open-contact>CONTACT <span>04</span></button>
         </div>
     </div>
+
     <main>
-        <section class="price-wrap yellow">
-            <div>
-                <div class="price-top">
-                    <div>
-                        <p class="eyebrow reveal">SKILLS / 03</p>
-                    </div>
-                    <div>
-                        <h1 class="reveal"><span class="price-number">MERN</span> <span class="currency">STACK</span>
-                        </h1>
-                        <p class="price-description reveal">The core stack I build production apps with — MongoDB,
-                            Express, React and Node.js.</p>
-                    </div>
+        <div class="journal-page skills-subpage">
+            <div class="skills-breadcrumb">
+                <a href="about.html" class="back-link magnetic" data-cursor="BACK">← Back to About</a>
+            </div>
+
+            <div class="page-head reveal">
+                <div>
+                    <p class="eyebrow">SKILLS / TOOLKIT</p>
+                    <h1 class="page-title">What I build <em>with.</em></h1>
                 </div>
-                <div class="price-card reveal">
-                    <div>
-                        <p class="eyebrow">CORE SKILLS</p>
-                        <h2>React &amp; Node.<br>Shipped, not just studied.</h2>
-                    </div>
-                    <p class="price-meta"><strong>Frontend:</strong> React.js, JavaScript ES6+, HTML5 / CSS3, Three.js, Framer Motion, Tailwind CSS<br><br><strong>Backend:</strong> Node.js, Express.js, MongoDB, REST APIs, Mongoose ODM, JWT Auth<br><br><strong>Tools &amp; Tech:</strong> Git &amp; GitHub, Docker, Postman, Figma, Vercel / Render, VS Code, Tableau<br><br><strong>Other:</strong> Data Structures &amp; Algorithms, DBMS, Machine Learning, Effective Communication, R</p>
-                </div>
-                <div class="feature-grid">
-                    <div class="feature reveal">
-                        <h4>01 / FRONTEND</h4>
-                        <p>React.js, Three.js, Framer Motion &amp; Tailwind CSS.</p>
-                    </div>
-                    <div class="feature reveal">
-                        <h4>02 / BACKEND</h4>
-                        <p>Node.js, Express.js, MongoDB &amp; JWT Auth.</p>
-                    </div>
-                    <div class="feature reveal">
-                        <h4>03 / TOOLS &amp; CS</h4>
-                        <p>Git, Docker, Postman, DSA, DBMS &amp; ML.</p>
-                    </div>
+                <div class="page-head-side">
+                    <p>A working index of the languages, concepts, frameworks, and tools behind my projects and internships, with no arbitrary percentages, just what I use in practice.</p>
+                    <span class="micro">INDEX / 01 / 04</span>
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="closing" aria-label="Closing statement">
-        <div class="noise"></div>
-        <div class="closing-inner reveal">
-            <p class="eyebrow">OPEN TO WORK</p>
-            <h2>LET'S<br><span>CONNECT.</span></h2><a class="yellow-button magnetic" href="contact.html"
-                data-cursor="OPEN">SAY HELLO <span>↗</span></a>
+
+            <section class="chapter" aria-label="Skill categories">
+                <div class="chapter-label reveal"><b>01</b><span class="micro">THE STACK</span></div>
+
+                <div class="guide reveal">
+                    <div class="guide-index" role="tablist" aria-label="Skill categories">
+                        <a href="#panel-frontend" class="is-active">01<span>/ FRONTEND</span></a>
+                        <a href="#panel-backend">02<span>/ BACKEND &amp; DB</span></a>
+                        <a href="#panel-cs">03<span>/ CS &amp; BLOCKCHAIN</span></a>
+                        <a href="#panel-deploy">04<span>/ DEPLOY &amp; TOOLS</span></a>
+                    </div>
+
+                    <div class="guide-section" id="panel-frontend" role="tabpanel" tabindex="0">
+                        <div class="guide-section-head">
+                            <div class="guide-number">01</div>
+                            <div>
+                                <h2>Frontend &amp; UI engineering</h2>
+                                <p>Interfaces shaped with semantic markup, layout discipline, and interactive polish.</p>
+                            </div>
+                        </div>
+                        <div class="skill-rows reveal">
+                            <div class="skill-row"><span class="skill-index">F01</span><b>React</b><span>Component-driven web applications.</span></div>
+                            <div class="skill-row"><span class="skill-index">F02</span><b>JavaScript / TypeScript</b><span>ES6+ application logic and type-safe interfaces.</span></div>
+                            <div class="skill-row"><span class="skill-index">F03</span><b>HTML &amp; CSS</b><span>Semantic structure, responsive grids, and editorial typography.</span></div>
+                            <div class="skill-row"><span class="skill-index">F04</span><b>UI/UX Engineering</b><span>Layout systems, motion choreography, and accessible controls.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section" id="panel-backend" role="tabpanel" tabindex="0">
+                        <div class="guide-section-head">
+                            <div class="guide-number">02</div>
+                            <div>
+                                <h2>Backend &amp; databases</h2>
+                                <p>Server architecture, API contracts, authentication, data modeling, and debugging.</p>
+                            </div>
+                        </div>
+                        <div class="skill-rows reveal">
+                            <div class="skill-row"><span class="skill-index">B01</span><b>Node.js</b><span>Server-side runtime and tooling.</span></div>
+                            <div class="skill-row"><span class="skill-index">B02</span><b>Express.js</b><span>REST APIs, middleware, and routing in MERN applications.</span></div>
+                            <div class="skill-row"><span class="skill-index">B03</span><b>Python</b><span>Scripting, automation, and backend utilities.</span></div>
+                            <div class="skill-row"><span class="skill-index">B04</span><b>MongoDB</b><span>Document schemas and queries across MERN applications.</span></div>
+                            <div class="skill-row"><span class="skill-index">B05</span><b>Mongoose</b><span>Schema modeling, validation, and database interactions.</span></div>
+                            <div class="skill-row"><span class="skill-index">B06</span><b>REST API Development</b><span>Designing and building resource-based HTTP APIs.</span></div>
+                            <div class="skill-row"><span class="skill-index">B07</span><b>API Integration</b><span>Connecting clients to internal and third-party APIs.</span></div>
+                            <div class="skill-row"><span class="skill-index">B08</span><b>JWT Authentication</b><span>Token-based login flows and protected routes.</span></div>
+                            <div class="skill-row"><span class="skill-index">B09</span><b>Database Management</b><span>Indexing, queries, and data integrity practices.</span></div>
+                            <div class="skill-row"><span class="skill-index">B10</span><b>Server-Side Validation</b><span>Checking and sanitizing input before it reaches the database.</span></div>
+                            <div class="skill-row"><span class="skill-index">B11</span><b>Error Handling</b><span>Clear failure states and predictable API responses.</span></div>
+                            <div class="skill-row"><span class="skill-index">B12</span><b>Debugging</b><span>Tracing issues across frontend, backend, and database layers.</span></div>
+                            <div class="skill-row"><span class="skill-index">B13</span><b>Solidity</b><span>Smart contract fundamentals and contract-side logic.</span></div>
+                            <div class="skill-row"><span class="skill-index">B14</span><b>Web3.js</b><span>Browser-to-blockchain interaction from JavaScript clients.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section" id="panel-cs" role="tabpanel" tabindex="0">
+                        <div class="guide-section-head">
+                            <div class="guide-number">03</div>
+                            <div>
+                                <h2>CS &amp; blockchain concepts</h2>
+                                <p>Computer science fundamentals and trust-system architecture.</p>
+                            </div>
+                        </div>
+                        <div class="skill-rows reveal">
+                            <p class="skill-group-label">Computer Science</p>
+                            <div class="skill-row"><span class="skill-index">C01</span><b>Data Structures &amp; Algorithms</b><span>Problem solving and complexity analysis.</span></div>
+                            <div class="skill-row"><span class="skill-index">C02</span><b>OOP</b><span>Class design, encapsulation, inheritance, and reusable models.</span></div>
+                            <div class="skill-row"><span class="skill-index">C03</span><b>DBMS</b><span>Relational concepts, schemas, and query fundamentals.</span></div>
+                            <div class="skill-row"><span class="skill-index">C04</span><b>Operating Systems</b><span>Processes, memory, and concurrency fundamentals.</span></div>
+                            <div class="skill-row"><span class="skill-index">C05</span><b>Computer Networks</b><span>HTTP, TCP/IP, and client-server communication.</span></div>
+                            <div class="skill-row"><span class="skill-index">C06</span><b>Software Engineering</b><span>Requirements, modular design, testing, and maintainability.</span></div>
+                            <div class="skill-row"><span class="skill-index">C07</span><b>Problem Solving</b><span>Breaking ambiguous problems into testable steps.</span></div>
+
+                            <p class="skill-group-label">Blockchain</p>
+                            <div class="skill-row"><span class="skill-index">C08</span><b>Blockchain Fundamentals</b><span>Ledgers, consensus, and decentralization concepts.</span></div>
+                            <div class="skill-row"><span class="skill-index">C09</span><b>Solidity</b><span>Writing and reading smart contracts on EVM chains.</span></div>
+                            <div class="skill-row"><span class="skill-index">C10</span><b>Smart Contracts</b><span>Contract lifecycle, events, and state management.</span></div>
+                            <div class="skill-row"><span class="skill-index">C11</span><b>Ethereum</b><span>Accounts, gas, transactions, and the EVM.</span></div>
+                            <div class="skill-row"><span class="skill-index">C12</span><b>Web3.js</b><span>Connecting JavaScript interfaces to blockchain providers.</span></div>
+                            <div class="skill-row"><span class="skill-index">C13</span><b>dApp Development</b><span>Frontends that read from and write to on-chain state.</span></div>
+                            <div class="skill-row"><span class="skill-index">C14</span><b>Smart Contract Integration</b><span>Wiring contract calls into application flows.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section" id="panel-deploy" role="tabpanel" tabindex="0">
+                        <div class="guide-section-head">
+                            <div class="guide-number">04</div>
+                            <div>
+                                <h2>Deployment &amp; workflow</h2>
+                                <p>Shipping production builds, managing environments, and keeping clean repositories.</p>
+                            </div>
+                        </div>
+                        <div class="skill-rows reveal">
+                            <p class="skill-group-label">Deployment &amp; DevOps</p>
+                            <div class="skill-row"><span class="skill-index">D01</span><b>Vercel</b><span>Static hosting, serverless functions, and preview deployments.</span></div>
+                            <div class="skill-row"><span class="skill-index">D02</span><b>Render</b><span>Web services and application deployments.</span></div>
+                            <div class="skill-row"><span class="skill-index">D03</span><b>Hostinger</b><span>Production hosting for full-stack applications.</span></div>
+                            <div class="skill-row"><span class="skill-index">D04</span><b>Docker</b><span>Containerized development and repeatable environments.</span></div>
+                            <div class="skill-row"><span class="skill-index">D05</span><b>Git</b><span>Version control and branching workflows.</span></div>
+                            <div class="skill-row"><span class="skill-index">D06</span><b>GitHub</b><span>Repositories, collaboration, and project history.</span></div>
+                            <div class="skill-row"><span class="skill-index">D07</span><b>CI/CD Basics</b><span>Automated checks and deployment pipelines.</span></div>
+                            <div class="skill-row"><span class="skill-index">D08</span><b>Cloud Deployment</b><span>Shipping apps to managed cloud platforms.</span></div>
+                            <div class="skill-row"><span class="skill-index">D09</span><b>Environment Configuration</b><span>Secrets, variables, and per-environment settings.</span></div>
+
+                            <p class="skill-group-label">Development Tools</p>
+                            <div class="skill-row"><span class="skill-index">D10</span><b>VS Code</b><span>Primary editor for development and debugging.</span></div>
+                            <div class="skill-row"><span class="skill-index">D11</span><b>Postman</b><span>API exploration and endpoint testing.</span></div>
+                            <div class="skill-row"><span class="skill-index">D12</span><b>Playwright</b><span>Browser automation and UI testing.</span></div>
+                            <div class="skill-row"><span class="skill-index">D13</span><b>Git</b><span>Version control and branching workflows.</span></div>
+                            <div class="skill-row"><span class="skill-index">D14</span><b>GitHub</b><span>Repositories, collaboration, and project history.</span></div>
+                            <div class="skill-row"><span class="skill-index">D15</span><b>Figma</b><span>Interface exploration and visual design.</span></div>
+                            <div class="skill-row"><span class="skill-index">D16</span><b>MongoDB Atlas</b><span>Managed MongoDB hosting and data inspection.</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="toolkit-closing reveal">Want to see these in action? <a href="index.html#work" class="inline-accent-link">Explore selected projects →</a></p>
+            </section>
         </div>
-    </section>
-    <footer class="footer">
+    </main>
+
+    <footer class="footer footer--black">
         <div class="footer-top">
             <div>
                 <div class="footer-brand">EKANSH<span>.</span></div>
-                <p>B.Tech CS student &amp; MERN stack developer.</p>
+                <p>B.Tech CS student &amp; MERN stack developer. Built as a small, opinionated journal of things made and places seen.</p>
             </div>
-            <div class="footer-links"><a href="service.html">WORK</a>
-                <a href="experience.html">EXPERIENCE</a>
+            <div class="footer-links">
+                <a href="index.html">HOME</a>
+                <a href="index.html#work">WORK</a>
+                <a href="about.html">ABOUT</a>
                 <a href="skills.html">SKILLS</a>
-                <a href="contact.html">CONTACT</a>
+                <button type="button" class="footer-link-btn" data-open-contact>CONTACT</button>
             </div>
-            <div class="footer-links"><a href="https://github.com/EkanshSaraswat" data-cursor="OPEN">GITHUB ↗</a>
-                <a href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" data-cursor="OPEN">LINKEDIN ↗</a>
+            <div class="footer-links">
+                <a href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">GITHUB ↗</a>
+                <a href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">LINKEDIN ↗</a>
                 <a href="mailto:ekanshsaraswat1234@gmail.com" data-cursor="OPEN">EMAIL ↗</a>
             </div>
         </div>
-        <div class="footer-bottom"><span>© 2026 EKANSH SARASWAT</span><span>JAIPUR, INDIA</span><button id="topBtn"
-                class="top-btn magnetic" type="button">BACK TO TOP ↑</button></div>
+        <div class="footer-bottom">
+            <span>© 2026 EKANSH SARASWAT</span>
+            <span>JAIPUR, INDIA</span>
+            <button id="topBtn" class="top-btn magnetic" type="button">BACK TO TOP ↑</button>
+        </div>
     </footer>
-    <div class="page-end-sentinel" aria-hidden="true"></div>
+
+    <!-- ── CONTACT MODAL ── -->
+    <dialog class="contact-modal" id="contactModal" aria-labelledby="contactModalHeading">
+        <div class="contact-modal-inner">
+            <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact dialog">×</button>
+
+            <div class="contact-tabs" role="tablist" aria-label="Contact options">
+                <button type="button" class="contact-tab is-active" id="contactTabMessage" role="tab" aria-selected="true" aria-controls="contactPanelMessage" tabindex="0">
+                    <span>01</span> MESSAGE
+                </button>
+                <button type="button" class="contact-tab" id="contactTabResume" role="tab" aria-selected="false" aria-controls="contactPanelResume" tabindex="-1">
+                    <span>02</span> RESUME
+                </button>
+            </div>
+
+            <div class="contact-panel" id="contactPanelMessage" role="tabpanel" aria-labelledby="contactTabMessage" tabindex="0">
+                <div class="contact-grid">
+                    <div>
+                        <span class="postage" aria-hidden="true"><span>JPR · 2026</span></span>
+                        <h2 class="final-heading" id="contactModalHeading">Leave a <em>note.</em></h2>
+                        <p class="final-sub">The fastest way to reach me is email. Or leave a message here, and it arrives in my inbox through the same contact service.</p>
+                        <p class="eyebrow modal-eyebrow">ADDRESS BOOK</p>
+                        <div class="contact-list">
+                            <button class="magnetic" id="copyMail" type="button" data-email="ekanshsaraswat1234@gmail.com" data-cursor="COPY">
+                                <span>EMAIL / CLICK TO COPY</span>
+                                <strong>ekanshsaraswat1234@gmail.com</strong>
+                                <span id="copyState">↗</span>
+                            </button>
+                            <a class="magnetic" href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                                <span>LINKEDIN</span><strong>in/ekansh-saraswat</strong><span>↗</span>
+                            </a>
+                            <a class="magnetic" href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                                <span>GITHUB</span><strong>@EkanshSaraswat</strong><span>↗</span>
+                            </a>
+                        </div>
+                        <p class="signoff">thanks for reading,<br>Ekansh ✳</p>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <p class="eyebrow modal-eyebrow">WRITE / SEND A MESSAGE / 01</p>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="contactName">YOUR NAME</label>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your name" autocomplete="name" maxlength="80" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">YOUR EMAIL</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">YOUR MESSAGE</label>
+                                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." maxlength="5000" required></textarea>
+                            </div>
+                            <button type="submit" class="action-button" id="submitContact">SEND MESSAGE <span>↗</span></button>
+                            <p id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-panel contact-panel--resume" id="contactPanelResume" role="tabpanel" aria-labelledby="contactTabResume" tabindex="0" hidden>
+                <div class="resume-doc">
+                    <header class="resume-head">
+                        <div>
+                            <p class="eyebrow">CURRICULUM VITAE / UPDATED 2026</p>
+                            <h2 class="resume-name">Ekansh <em>Saraswat</em></h2>
+                            <p class="resume-role">UI/UX Designer · Product Interfaces · Frontend</p>
+                        </div>
+                        <div class="resume-contact">
+                            <span>Jaipur, India</span>
+                            <a href="tel:+918209317312">+91 82093 17312</a>
+                            <a href="mailto:ekanshsaraswat1234@gmail.com">ekanshsaraswat1234@gmail.com</a>
+                            <span class="resume-links">
+                                <a href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                                <a href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                                <a href="index.html">Portfolio ↗</a>
+                            </span>
+                        </div>
+                    </header>
+
+                    <a class="action-button resume-download" href="assets/shared/Ekansh_Saraswat_Resume.pdf" download="Ekansh_Saraswat_Resume.pdf" data-cursor="SAVE">
+                        DOWNLOAD PDF <span>↓</span>
+                    </a>
+
+                    <div class="resume-columns">
+                        <div class="resume-main">
+                            <section class="resume-section">
+                                <h3 class="resume-label">Profile</h3>
+                                <p class="resume-copy">Computer Science and Engineering student graduating in 2027, with experience designing and building web interfaces through internships and product projects. Combines UI/UX thinking with frontend implementation, with a focus on information hierarchy, user journeys, dashboard usability and responsive layouts. Interested in turning product requirements into clear, practical experiences.</p>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Experience</h3>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Full Stack Developer Intern</h4>
+                                        <span class="resume-date">Jul 2026 — Aug 2026</span>
+                                    </div>
+                                    <p class="resume-org">Realmonk Realty Pvt. Ltd.</p>
+                                    <ul>
+                                        <li>Built and deployed a multi-page real estate website, shaping the homepage around the company's value proposition and trust signals, including its team, property portfolio and client testimonials.</li>
+                                        <li>Worked on content hierarchy and page structure to guide visitors from the introduction and credibility information towards the contact enquiry section.</li>
+                                        <li>Designed and shipped the Blog/News section, implemented an email-enabled contact workflow, and tested responsive layouts to fix mobile presentation issues.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Full Stack Developer Intern</h4>
+                                        <span class="resume-date">Jun 2025 — Aug 2025</span>
+                                    </div>
+                                    <p class="resume-org">Globe Asia Transport Pvt. Ltd.</p>
+                                    <ul>
+                                        <li>Independently built an Employee Management System from design through deployment using the MERN stack, translating employee and leave-management requirements into interface workflows.</li>
+                                        <li>Created a dashboard-oriented interface that brings employee information and leave-related actions together for easier access to routine administrative tasks.</li>
+                                        <li>Organized information around common administrative tasks and clear status visibility; implemented authentication, validation, exception handling, testing and debugging.</li>
+                                    </ul>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Selected Projects</h3>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>SampadaSuraksha</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Disaster Relief Coordination Platform</p>
+                                    <ul>
+                                        <li>Structured role-based workflows for victims, NGOs and government teams, considering the different information and actions each group needs during disaster response.</li>
+                                        <li>Built an NGO dashboard to claim and track rescue tasks and monitor food, medicine and boats, emphasizing task status, resource visibility and coordination.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>BlockLance</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Decentralized Freelancing Platform</p>
+                                    <ul>
+                                        <li>Designed the React interface around the client–freelancer journey, organizing job posting, proposals and milestone tracking into a sequence users can follow.</li>
+                                        <li>Handled pending and failed blockchain transaction states with clear interface feedback to help users understand the status of their actions.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Adaptive Escrow System</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Blockchain Escrow Mechanism</p>
+                                    <ul>
+                                        <li>Built an interactive web application combining off-chain risk computation with on-chain smart-contract validation.</li>
+                                        <li>Presented the escrow process through an interactive interface, connecting risk checks and contract validation with transaction handling. Deployed at sea-escrow.vercel.app.</li>
+                                    </ul>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Achievements &amp; Leadership</h3>
+                                <ul class="resume-list resume-list--plain">
+                                    <li>Two-time winner of weekly coding contests.</li>
+                                    <li>Winner of Coder of the Month.</li>
+                                    <li>Core team member — HackJKLU Hackathon 2026.</li>
+                                    <li>Core team member — Sabrang Cultural Event 2025.</li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <aside class="resume-side">
+                            <section class="resume-section">
+                                <h3 class="resume-label">Design Skills</h3>
+                                <ul class="resume-list">
+                                    <li>User Interface Design</li>
+                                    <li>User Flows &amp; Workflow Mapping</li>
+                                    <li>Wireframing &amp; Prototyping</li>
+                                    <li>Visual Hierarchy &amp; Layout</li>
+                                    <li>Responsive Web Design</li>
+                                    <li>Dashboard &amp; Information Design</li>
+                                    <li>Design-to-Code Collaboration</li>
+                                    <li>Interaction &amp; State Feedback</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Tools &amp; Technologies</h3>
+                                <dl class="resume-tools">
+                                    <div><dt>Design</dt><dd>Figma</dd></div>
+                                    <div><dt>Frontend</dt><dd>HTML5, CSS3, JavaScript, React.js, Tailwind CSS</dd></div>
+                                    <div><dt>Other</dt><dd>Git/GitHub, VS Code, Postman, Node.js, Express.js, MongoDB</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Education</h3>
+                                <article class="resume-entry">
+                                    <h4>B.Tech — Computer Science and Engineering</h4>
+                                    <p class="resume-org">JK Lakshmipat University, Jaipur</p>
+                                    <p class="resume-date">Expected 2027 · 2027 batch</p>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Certifications</h3>
+                                <ul class="resume-list">
+                                    <li>Red Hat System Administration</li>
+                                    <li>Spark Fundamentals — Cognitive Class</li>
+                                    <li>MySQL Database with PHP — Coursera</li>
+                                    <li>Python Programming — Coursera</li>
+                                    <li>C Programming — Infosys</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Strengths</h3>
+                                <ul class="resume-chips">
+                                    <li>Requirement understanding</li>
+                                    <li>Problem-solving</li>
+                                    <li>Interface clarity</li>
+                                    <li>Cross-functional collaboration</li>
+                                    <li>Feedback &amp; iteration</li>
+                                </ul>
+                            </section>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
     <script src="site.js"></script>
 </body>
-
 </html>

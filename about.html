@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Ekansh Saraswat, a cinematic journey through mountains, curiosity and the things built beyond the screen." />
+    <title>About | Ekansh Saraswat</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Courier+Prime:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+    <div class="page-wipe hide" aria-hidden="true"><div class="wipe-inner">OPENING<span class="dots">...</span></div></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="cursor-label" aria-hidden="true">EXPLORE</div>
+    <nav class="progress-rail" aria-label="Page sections">
+        <div class="progress-line" aria-hidden="true"><span></span></div>
+        <div class="progress-mark" aria-hidden="true">00</div>
+    </nav>
+
+    <header class="site-header">
+        <a class="brand magnetic" href="index.html" data-cursor="HOME">EKANSH<span>.</span></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a class="nav-link magnetic" href="index.html" data-cursor="HOME">Home</a>
+            <a class="nav-link magnetic" href="index.html#work" data-cursor="WORK">Work</a>
+            <a class="nav-link magnetic" href="about.html" data-cursor="ABOUT" aria-current="page">About</a>
+            <button class="nav-link nav-link--btn magnetic" type="button" data-open-contact data-cursor="WRITE">Contact</button>
+        </nav>
+        <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="mobile-menu">MENU</button>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+        <div class="mobile-menu-inner">
+            <p class="eyebrow">NAVIGATION</p>
+            <a href="index.html" class="mobile-link">HOME <span>01</span></a>
+            <a href="index.html#work" class="mobile-link">WORK <span>02</span></a>
+            <a href="about.html" class="mobile-link" aria-current="page">ABOUT <span>03</span></a>
+            <button type="button" class="mobile-link mobile-link--btn" data-open-contact>CONTACT <span>04</span></button>
+        </div>
+    </div>
+
+    <main>
+        <div class="journal-page about-page">
+
+            <!-- ── SECTION 1 — HERO ("Beyond the screen.") ── -->
+            <section class="about-hero" id="aboutHero" aria-label="Cinematic mountain landscape">
+                <div class="landscape-stage landscape-stage--dark" id="landscapeStage">
+                    <div class="layer layer--sky" id="layerSky"></div>
+                    <div class="layer layer--mist layer--mist-far" id="mistFar" data-layer="mist-far"></div>
+                    <div class="layer layer--distant" id="layerDistant" data-layer="distant"></div>
+                    <div class="layer layer--dominant" id="layerDominant" data-layer="dominant"></div>
+                    <div class="layer layer--closest" id="layerClosest" data-layer="closest"></div>
+                    <div class="layer layer--mist layer--mist-near" id="mistNear" data-layer="mist-near"></div>
+                </div>
+                <div class="about-hero-vignette" aria-hidden="true"></div>
+                <div class="hero-content">
+                    <p class="eyebrow"><span class="hl-strip hl-strip--mono">A LITTLE ABOUT ME / 01</span></p>
+                    <h1 class="hero-heading"><span class="hl-strip">Beyond the <em>screen.</em></span></h1>
+                    <p class="hero-lede"><span class="hl-strip hl-strip--body">I'm curious about the world, the things we can build, and the places that remind us how much there is still to explore.</span></p>
+                    <p class="hero-annotation"><span class="hl-strip hl-strip--mono">An ongoing journey</span></p>
+                </div>
+                <div class="about-hero-fade" aria-hidden="true"></div>
+            </section>
+
+            <!-- ── SECTION 2 — SCROLL-DRIVEN VIDEO BAND ── -->
+            <section class="video-band-pin" id="videoBandPin" aria-label="The same mountains seen through the screen">
+                <div class="ascii-section video-band" id="asciiSection">
+                    <div class="ascii-inner">
+                        <div class="ascii-header">
+                            <p class="ascii-label">01 / FIELD NOTE</p>
+                            <h2 class="ascii-heading"><span class="hl-strip hl-strip--white">The same mountains, seen through the screen.</span></h2>
+                        </div>
+                        <div class="ascii-stage video-stage" id="videoStage">
+                            <video class="scrub-video is-visible" id="asciiVideo" src="assets/about/source.mp4" muted playsinline preload="auto"></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── SECTION 3A — PERSONAL INTRODUCTION ── -->
+            <section class="about-intro reveal" id="aboutIntro">
+                <div class="intro-grid">
+                    <div class="intro-copy">
+                        <h2 class="intro-heading">Somewhere between design <em>and development.</em></h2>
+                        <p class="intro-lede">I'm a Computer Science and AI student who enjoys bringing ideas to life through technology and thoughtful design.</p>
+                        <p>My interest in web development grew from a curiosity about how things work, and how they could work better. Along the way, I found myself drawn to the space between engineering and visual design: where a working product also has to feel intentional, usable and human.</p>
+                        <p>I approach problems by breaking them into small, testable pieces. Whether it's a MERN-stack application, a blockchain risk engine, or a frontend interface, the goal is the same: build something useful, keep it simple, and iterate from there.</p>
+                        <p class="intro-meta">
+                            <span class="meta-chip">Computer Science &amp; AI</span>
+                            <span class="meta-chip">MERN Stack</span>
+                            <span class="meta-chip">UI/UX Design</span>
+                        </p>
+                    </div>
+                    <div class="intro-image">
+                        <div class="intro-frame">
+                            <img class="about-photo about-photo--intro" src="assets/about/photos/intro-ridge.jpg" alt="A quiet mountain ridge seen between climbs" loading="lazy" />
+                        </div>
+                        <p class="intro-caption">A quiet ridge, between climbs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── SECTION 3B — THINGS THAT KEEP ME CURIOUS ── -->
+            <section class="about-curiosity reveal" id="aboutCuriosity">
+                <div class="curiosity-header">
+                    <h2 class="curiosity-heading">Things that keep me <em>curious.</em></h2>
+                    <p class="curiosity-lede">These are the directions I keep returning to, not as separate disciplines, but as overlapping interests.</p>
+                </div>
+                <div class="curiosity-grid">
+                    <article class="curiosity-item" data-curiosity="design">
+                        <span class="curiosity-num">01</span>
+                        <h3 class="curiosity-title">Design</h3>
+                        <p class="curiosity-text">Exploring visual systems, interfaces, typography, layouts and digital experiences that feel considered.</p>
+                        <div class="curiosity-figure" aria-hidden="true">
+                            <img class="about-photo" src="assets/about/photos/curiosity-design.jpg" alt="" loading="lazy" />
+                        </div>
+                    </article>
+                    <article class="curiosity-item" data-curiosity="development">
+                        <span class="curiosity-num">02</span>
+                        <h3 class="curiosity-title">Development</h3>
+                        <p class="curiosity-text">Building websites, experimenting with frontend technologies and turning ideas into working products.</p>
+                        <div class="curiosity-figure" aria-hidden="true">
+                            <img class="about-photo" src="assets/about/photos/curiosity-development.jpg" alt="" loading="lazy" />
+                        </div>
+                    </article>
+                    <article class="curiosity-item" data-curiosity="technology">
+                        <span class="curiosity-num">03</span>
+                        <h3 class="curiosity-title">Technology</h3>
+                        <p class="curiosity-text">Exploring new technologies, AI and the possibilities of combining engineering with creative thinking.</p>
+                        <div class="curiosity-figure" aria-hidden="true">
+                            <img class="about-photo" src="assets/about/photos/curiosity-technology.jpg" alt="" loading="lazy" />
+                        </div>
+                    </article>
+                    <article class="curiosity-item" data-curiosity="exploration">
+                        <span class="curiosity-num">04</span>
+                        <h3 class="curiosity-title">Exploration</h3>
+                        <p class="curiosity-text">Mountains, landscapes, photography and discovering new perspectives beyond the screen.</p>
+                        <div class="curiosity-figure" aria-hidden="true">
+                            <img class="about-photo" src="assets/about/photos/curiosity-exploration.jpg" alt="" loading="lazy" />
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ── SECTION 3C — THE JOURNEY ── -->
+            <section class="about-journey reveal" id="aboutJourney">
+                <div class="journey-header">
+                    <h2 class="journey-heading">Still finding my <em>way.</em></h2>
+                    <p class="journey-lede">A personal timeline of education, internships and the steps in between.</p>
+                </div>
+                <div class="journey-items">
+                    <div class="journey-item journey-item--left">
+                        <span class="journey-marker">01</span>
+                        <time class="journey-date">2023</time>
+                        <div class="journey-content">
+                            <h3 class="journey-title">Computer Science &amp; AI</h3>
+                            <p class="journey-text">Began my B.Tech in Computer Science at JK Lakshmipat University, Jaipur, expected 2027.</p>
+                        </div>
+                    </div>
+                    <div class="journey-item journey-item--right">
+                        <span class="journey-marker">02</span>
+                        <time class="journey-date">2024</time>
+                        <div class="journey-content">
+                            <h3 class="journey-title">Web development</h3>
+                            <p class="journey-text">Explored the MERN stack and began turning ideas into working products.</p>
+                        </div>
+                    </div>
+                    <div class="journey-item journey-item--left">
+                        <span class="journey-marker">03</span>
+                        <time class="journey-date">2024</time>
+                        <div class="journey-content">
+                            <h3 class="journey-title">Globe Asia Transport</h3>
+                            <p class="journey-text">Internship building a MERN stack Employee Management System.</p>
+                        </div>
+                    </div>
+                    <div class="journey-item journey-item--right">
+                        <span class="journey-marker">04</span>
+                        <time class="journey-date">2025</time>
+                        <div class="journey-content">
+                            <h3 class="journey-title">Realmonk Realty</h3>
+                            <p class="journey-text">Full-stack internship using an Express/Node.js backend, deployed to production on Hostinger.</p>
+                        </div>
+                    </div>
+                    <div class="journey-item journey-item--left">
+                        <span class="journey-marker">05</span>
+                        <time class="journey-date">Now</time>
+                        <div class="journey-content">
+                            <h3 class="journey-title">Practicing &amp; shipping</h3>
+                            <p class="journey-text">Practicing DSA, shipping side projects and exploring new product ideas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── SECTION 3D — OUTSIDE THE PIXELS ── -->
+            <section class="about-moment reveal" id="aboutMoment">
+                <div class="moment-header">
+                    <h2 class="moment-heading">Outside the <em>pixels.</em></h2>
+                    <p class="moment-lede">A small photographic journal of things seen beyond the code.</p>
+                </div>
+                <div class="moment-grid">
+                    <figure class="moment-figure moment-figure--a">
+                        <img class="about-photo" src="assets/about/photos/moment-long-way-up.jpg" alt="Mountain trail on the long way up" loading="lazy" />
+                        <span class="moment-caption">The long way up</span>
+                    </figure>
+                    <figure class="moment-figure moment-figure--b">
+                        <img class="about-photo" src="assets/about/photos/moment-somewhere-on-the-way.jpg" alt="Mountain view somewhere along the trail" loading="lazy" />
+                        <span class="moment-caption">Somewhere on the way</span>
+                    </figure>
+                    <figure class="moment-figure moment-figure--c">
+                        <img class="about-photo" src="assets/about/photos/moment-trail-study.jpg" alt="A study of the trail ahead" loading="lazy" />
+                        <span class="moment-caption">Trail study</span>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- ── SECTION 4 — CLOSING CTA BAND ── -->
+            <section class="about-closing reveal" id="aboutClosing">
+                <div class="closing-content">
+                    <h2 class="closing-heading">There's always another <em>horizon.</em></h2>
+                    <p class="closing-lede">Still learning. Still building. Still exploring.</p>
+                    <div class="closing-links">
+                        <a href="index.html#work" class="closing-link magnetic" data-cursor="WORK">Explore my projects →</a>
+                        <a href="skills.html" class="closing-link magnetic" data-cursor="SKILLS">Discover my skills →</a>
+                        <button type="button" class="closing-link magnetic" data-open-contact data-cursor="WRITE">Get in touch →</button>
+                    </div>
+                </div>
+                <div class="closing-horizon" id="closingHorizon" aria-hidden="true"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer footer--black">
+        <div class="footer-top">
+            <div>
+                <div class="footer-brand">EKANSH<span>.</span></div>
+                <p>B.Tech CS student &amp; MERN stack developer. Built as a small, opinionated journal of things made and places seen.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">HOME</a>
+                <a href="index.html#work">WORK</a>
+                <a href="about.html">ABOUT</a>
+                <a href="skills.html">SKILLS</a>
+                <button type="button" class="footer-link-btn" data-open-contact>CONTACT</button>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">GITHUB ↗</a>
+                <a href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">LINKEDIN ↗</a>
+                <a href="mailto:ekanshsaraswat1234@gmail.com" data-cursor="OPEN">EMAIL ↗</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 EKANSH SARASWAT</span>
+            <span>JAIPUR, INDIA</span>
+            <button id="topBtn" class="top-btn magnetic" type="button">BACK TO TOP ↑</button>
+        </div>
+    </footer>
+
+    <!-- ── CONTACT MODAL ── -->
+    <dialog class="contact-modal" id="contactModal" aria-labelledby="contactModalHeading">
+        <div class="contact-modal-inner">
+            <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact dialog">×</button>
+
+            <div class="contact-tabs" role="tablist" aria-label="Contact options">
+                <button type="button" class="contact-tab is-active" id="contactTabMessage" role="tab" aria-selected="true" aria-controls="contactPanelMessage" tabindex="0">
+                    <span>01</span> MESSAGE
+                </button>
+                <button type="button" class="contact-tab" id="contactTabResume" role="tab" aria-selected="false" aria-controls="contactPanelResume" tabindex="-1">
+                    <span>02</span> RESUME
+                </button>
+            </div>
+
+            <div class="contact-panel" id="contactPanelMessage" role="tabpanel" aria-labelledby="contactTabMessage" tabindex="0">
+                <div class="contact-grid">
+                    <div>
+                        <span class="postage" aria-hidden="true"><span>JPR · 2026</span></span>
+                        <h2 class="final-heading" id="contactModalHeading">Leave a <em>note.</em></h2>
+                        <p class="final-sub">The fastest way to reach me is email. Or leave a message here, and it arrives in my inbox through the same contact service.</p>
+                        <p class="eyebrow modal-eyebrow">ADDRESS BOOK</p>
+                        <div class="contact-list">
+                            <button class="magnetic" id="copyMail" type="button" data-email="ekanshsaraswat1234@gmail.com" data-cursor="COPY">
+                                <span>EMAIL / CLICK TO COPY</span>
+                                <strong>ekanshsaraswat1234@gmail.com</strong>
+                                <span id="copyState">↗</span>
+                            </button>
+                            <a class="magnetic" href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                                <span>LINKEDIN</span><strong>in/ekansh-saraswat</strong><span>↗</span>
+                            </a>
+                            <a class="magnetic" href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer" data-cursor="OPEN">
+                                <span>GITHUB</span><strong>@EkanshSaraswat</strong><span>↗</span>
+                            </a>
+                        </div>
+                        <p class="signoff">thanks for reading,<br>Ekansh ✳</p>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <p class="eyebrow modal-eyebrow">WRITE / SEND A MESSAGE / 01</p>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="contactName">YOUR NAME</label>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your name" autocomplete="name" maxlength="80" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">YOUR EMAIL</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">YOUR MESSAGE</label>
+                                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." maxlength="5000" required></textarea>
+                            </div>
+                            <button type="submit" class="action-button" id="submitContact">SEND MESSAGE <span>↗</span></button>
+                            <p id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-panel contact-panel--resume" id="contactPanelResume" role="tabpanel" aria-labelledby="contactTabResume" tabindex="0" hidden>
+                <div class="resume-doc">
+                    <header class="resume-head">
+                        <div>
+                            <p class="eyebrow">CURRICULUM VITAE / UPDATED 2026</p>
+                            <h2 class="resume-name">Ekansh <em>Saraswat</em></h2>
+                            <p class="resume-role">UI/UX Designer · Product Interfaces · Frontend</p>
+                        </div>
+                        <div class="resume-contact">
+                            <span>Jaipur, India</span>
+                            <a href="tel:+918209317312">+91 82093 17312</a>
+                            <a href="mailto:ekanshsaraswat1234@gmail.com">ekanshsaraswat1234@gmail.com</a>
+                            <span class="resume-links">
+                                <a href="https://www.linkedin.com/in/ekansh-saraswat-a2a883285/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                                <a href="https://github.com/EkanshSaraswat" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                                <a href="index.html">Portfolio ↗</a>
+                            </span>
+                        </div>
+                    </header>
+
+                    <a class="action-button resume-download" href="assets/shared/Ekansh_Saraswat_Resume.pdf" download="Ekansh_Saraswat_Resume.pdf" data-cursor="SAVE">
+                        DOWNLOAD PDF <span>↓</span>
+                    </a>
+
+                    <div class="resume-columns">
+                        <div class="resume-main">
+                            <section class="resume-section">
+                                <h3 class="resume-label">Profile</h3>
+                                <p class="resume-copy">Computer Science and Engineering student graduating in 2027, with experience designing and building web interfaces through internships and product projects. Combines UI/UX thinking with frontend implementation, with a focus on information hierarchy, user journeys, dashboard usability and responsive layouts. Interested in turning product requirements into clear, practical experiences.</p>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Experience</h3>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Full Stack Developer Intern</h4>
+                                        <span class="resume-date">Jul 2026 — Aug 2026</span>
+                                    </div>
+                                    <p class="resume-org">Realmonk Realty Pvt. Ltd.</p>
+                                    <ul>
+                                        <li>Built and deployed a multi-page real estate website, shaping the homepage around the company's value proposition and trust signals, including its team, property portfolio and client testimonials.</li>
+                                        <li>Worked on content hierarchy and page structure to guide visitors from the introduction and credibility information towards the contact enquiry section.</li>
+                                        <li>Designed and shipped the Blog/News section, implemented an email-enabled contact workflow, and tested responsive layouts to fix mobile presentation issues.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Full Stack Developer Intern</h4>
+                                        <span class="resume-date">Jun 2025 — Aug 2025</span>
+                                    </div>
+                                    <p class="resume-org">Globe Asia Transport Pvt. Ltd.</p>
+                                    <ul>
+                                        <li>Independently built an Employee Management System from design through deployment using the MERN stack, translating employee and leave-management requirements into interface workflows.</li>
+                                        <li>Created a dashboard-oriented interface that brings employee information and leave-related actions together for easier access to routine administrative tasks.</li>
+                                        <li>Organized information around common administrative tasks and clear status visibility; implemented authentication, validation, exception handling, testing and debugging.</li>
+                                    </ul>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Selected Projects</h3>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>SampadaSuraksha</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Disaster Relief Coordination Platform</p>
+                                    <ul>
+                                        <li>Structured role-based workflows for victims, NGOs and government teams, considering the different information and actions each group needs during disaster response.</li>
+                                        <li>Built an NGO dashboard to claim and track rescue tasks and monitor food, medicine and boats, emphasizing task status, resource visibility and coordination.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>BlockLance</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Decentralized Freelancing Platform</p>
+                                    <ul>
+                                        <li>Designed the React interface around the client–freelancer journey, organizing job posting, proposals and milestone tracking into a sequence users can follow.</li>
+                                        <li>Handled pending and failed blockchain transaction states with clear interface feedback to help users understand the status of their actions.</li>
+                                    </ul>
+                                </article>
+                                <article class="resume-entry">
+                                    <div class="resume-entry-head">
+                                        <h4>Adaptive Escrow System</h4>
+                                        <span class="resume-date">Jan 2026 — Apr 2026</span>
+                                    </div>
+                                    <p class="resume-org">Blockchain Escrow Mechanism</p>
+                                    <ul>
+                                        <li>Built an interactive web application combining off-chain risk computation with on-chain smart-contract validation.</li>
+                                        <li>Presented the escrow process through an interactive interface, connecting risk checks and contract validation with transaction handling. Deployed at sea-escrow.vercel.app.</li>
+                                    </ul>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Achievements &amp; Leadership</h3>
+                                <ul class="resume-list resume-list--plain">
+                                    <li>Two-time winner of weekly coding contests.</li>
+                                    <li>Winner of Coder of the Month.</li>
+                                    <li>Core team member — HackJKLU Hackathon 2026.</li>
+                                    <li>Core team member — Sabrang Cultural Event 2025.</li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <aside class="resume-side">
+                            <section class="resume-section">
+                                <h3 class="resume-label">Design Skills</h3>
+                                <ul class="resume-list">
+                                    <li>User Interface Design</li>
+                                    <li>User Flows &amp; Workflow Mapping</li>
+                                    <li>Wireframing &amp; Prototyping</li>
+                                    <li>Visual Hierarchy &amp; Layout</li>
+                                    <li>Responsive Web Design</li>
+                                    <li>Dashboard &amp; Information Design</li>
+                                    <li>Design-to-Code Collaboration</li>
+                                    <li>Interaction &amp; State Feedback</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Tools &amp; Technologies</h3>
+                                <dl class="resume-tools">
+                                    <div><dt>Design</dt><dd>Figma</dd></div>
+                                    <div><dt>Frontend</dt><dd>HTML5, CSS3, JavaScript, React.js, Tailwind CSS</dd></div>
+                                    <div><dt>Other</dt><dd>Git/GitHub, VS Code, Postman, Node.js, Express.js, MongoDB</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Education</h3>
+                                <article class="resume-entry">
+                                    <h4>B.Tech — Computer Science and Engineering</h4>
+                                    <p class="resume-org">JK Lakshmipat University, Jaipur</p>
+                                    <p class="resume-date">Expected 2027 · 2027 batch</p>
+                                </article>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Certifications</h3>
+                                <ul class="resume-list">
+                                    <li>Red Hat System Administration</li>
+                                    <li>Spark Fundamentals — Cognitive Class</li>
+                                    <li>MySQL Database with PHP — Coursera</li>
+                                    <li>Python Programming — Coursera</li>
+                                    <li>C Programming — Infosys</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3 class="resume-label">Strengths</h3>
+                                <ul class="resume-chips">
+                                    <li>Requirement understanding</li>
+                                    <li>Problem-solving</li>
+                                    <li>Interface clarity</li>
+                                    <li>Cross-functional collaboration</li>
+                                    <li>Feedback &amp; iteration</li>
+                                </ul>
+                            </section>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="site.js"></script>
+</body>
+</html>
